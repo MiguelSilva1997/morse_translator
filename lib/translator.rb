@@ -85,7 +85,7 @@ class Translate
   end
 
   def from_file(file)
-    phrase = File.open("./#{file}", "r")
+    phrase = File.open("./lib/#{file}", "r")
     answer = ''
     phrase.readline.chomp.each_char do |word|
       answer += eng_to_morse(word)
